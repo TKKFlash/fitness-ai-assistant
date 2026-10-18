@@ -1,0 +1,19 @@
+providers:
+  deepseek:
+    type: openai_compatible
+    base_url: ""
+    api_key_env: DEEPSEEK_API_KEY
+  litellm:
+    type: openai_compatible
+    base_url: ""
+    api_key_env: LITELLM_API_KEY
+  anthropic:
+    type: anthropic
+    api_key_env: ANTHROPIC_API_KEY
+roles:
+  router:
+    provider: deepseek
+    model: ""
+  planner:
+    provider: deepseek
+    model: ""
